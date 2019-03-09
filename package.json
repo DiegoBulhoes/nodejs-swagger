@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -e js,json -w . --exec babel-node server.js",
+    "build": "babel src -d lib",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint '**/*.js' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoBulhoes/nodejs-swagger.git"
+  },
+  "keywords": [],
+  "author": "DiegoBulhoes",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/DiegoBulhoes/nodejs-swagger/issues"
+  },
+  "homepage": "https://github.com/DiegoBulhoes/nodejs-swagger#readme",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "swagger-jsdoc": "^3.2.7",
+    "swagger-ui-express": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.10"
+  }
+}
